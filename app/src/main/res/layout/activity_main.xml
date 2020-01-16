@@ -1,0 +1,41 @@
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"/>
+
+
+    <RelativeLayout
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="72dp">
+
+        <SeekBar
+            android:id="@+id/seek_bar"
+            android:background="@color/colorPrimaryDark"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"/>
+
+        <TextView
+            android:id="@+id/tv_playback_speed"
+            android:textStyle="bold"
+            android:layout_margin="4dp"
+            android:textColor="@color/colorAccent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+    </FrameLayout>
+
+</layout>
+
+<!--The <layout> tag is your signal to the
+ data binding library that it should work on
+  your layout file.-->
